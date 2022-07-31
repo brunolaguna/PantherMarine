@@ -1,0 +1,69 @@
+body {
+    background-image: linear-gradient(to left, rgb(179, 179, 179) , rgb(0, 0, 0) 80%);
+}
+div{
+    margin: auto;
+    margin-top: 3.5%;
+    color: black;
+    width: 35%;
+    height: 40vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 10px 10px 10px 10px;
+}
+input#nome{
+    position: absolute;
+    top: 29.6%;
+    left: 43.5%;
+    height: 2.5%;
+    width: 22%;
+}
+input#e-mail{
+    position: absolute;
+    top: 37.5%;
+    left: 43.5%;
+    height: 2.5%;
+    width: 22%;
+}
+input#senha{
+    position: absolute;
+    top: 45.5%;
+    left: 43.5%;
+    height: 2.5%;
+    width: 22%;
+}
+input#confirma-senha{
+    position: absolute;
+    top: 53.5%;
+    left: 43.5%;
+    height: 2.5%;
+    width: 22%;
+}
+input#btn-seguinte{
+    height: 5%;
+    position: absolute;
+    top: 69%;
+    left: 53%;
+}
+label#nome-completo{
+    position: absolute;
+    top: 30%;
+    left: 37.5%;   
+}
+label#e-mail{
+    position: absolute;
+    top: 38%;
+    left: 35.5%;  
+}
+label#senha{
+    position: absolute;
+    top: 46%;
+    left: 37.8%;  
+}
+label#confirma-senha{
+    position: absolute;
+    top: 54%;
+    left: 33.2%;
+}
