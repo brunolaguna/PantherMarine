@@ -1,4 +1,4 @@
-body {  
+body {
     background-image: linear-gradient(to left, rgb(216, 216, 216), rgb(0, 0, 0));
 }
 
@@ -9,54 +9,71 @@ a {
     font-size: 18px;
 }
 
-a:before { /* Underline */
-    content: ""; /* If you delete this content, the underline will disappear */
+a:before {
+    content: "";
     position: absolute;
     width: 100%;
     height: 1px;
-    bottom: 0; /* Leave the line below the letter. */
-    left: 0; /*This is to leave the line in the center of the word*/
-    background-color: rgb(85, 25, 25); /*The line color*/
-    transform: scaleX(0); /*This is for hidden the line*/
-    transition: all 0.3s ease-in-out 0s; /*The action to appear underline*/
+    bottom: 0;
+    left: 0;
+    background-color: rgb(85, 25, 25);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 a:hover:before {
-    transform: scaleX(1); /*To show the line*/
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
-a:hover { /*The action to show the links when the cursor is above the link(a)*/
+a:hover {
     font-size: 109%;
     opacity: 0.8;
 }
 
-.menu { /*The menu position*/
+
+
+.menu {
+    display: block;
     top: 36px;
     left: 10%;
     position: absolute;
 }
 
-.menu ul { /*The dropdown container*/
+.menu > li > a {
+    display: block;
+    text-decoration: none;
+}
+
+.menu ul {
     background: rgb(180, 180, 180);
-    left: 10%;
-    opacity: 0; /*Hide the container before hovering over*/
+    height: 0;
+    left: 0%;
+    opacity: 0;
     position: absolute;
-    transition: all .3s ease; /*Dropdown transition*/
-    width: 100%; /*Container width before hovering*/
+    transition: all .2s ease;
+    top: 100%;
+    width: 100%;
   }
 
-.menu li:hover ul { /*After hovering over the container*/
+.menu li:hover ul {
+    height: 130px;
     opacity: 1;
+    transform: translateY(0);
     width: 82%;
 }
 
-.menu ul a { /*Container lettering style*/
+.menu ul a {
     color: rgb(116, 0, 0);
     display: block;
     padding: 5px 0px;
     font-size: 16px;
 }
 
-li { /*Hide the list style*/
+li {
     list-style-type: none;
 }

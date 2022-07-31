@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,31 +8,43 @@
     <link rel="shortcut icon" href="imagens/Imagem_Panther_Favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="stylelagu.css">
     <style>
+        
         body {
-            position: relative;     /*Logo position (I'll improve it later) */   
+            position: relative;        
         }
-        img { /* Position of navi-bar (I'll improve it later) */
+        img {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, 40%);
         }
+        :-webkit-any-link() {
+            cursor: pointer;
+        }
+        area {
+            display: inline;
+        }
     </style>
 </head>
 <body>
-    <a href="index.html"><img src="imagens/Icone_site2.png" alt="Logo" style="left: 6%; top: -53%;"></a>
+    <a href="file:///C:/Users/bruno/OneDrive/Documentos/Estudos/html-css/Projetos/PantherMarine/index.html"><img src="imagens/Icone_site2.png" alt="Logo" style="left: 6%; top: -53%;"></a>
+    <!--<img src="imagens/Menu Panther.jpg" width="800" height="400" alt="Menu" usemap="#Map">-->
+    <map name="Map" id="Map">
+        <area shape="rect" coords="21, 30, 260, 161" href="http://www.pantermarine.com.br/linha-nautica.htm" target="_external" alt="">
+        <area shape="circle" coords="752, 50, 158" href="http://www.pantermarine.com.br/t-vol-tratores.htm" target="_external" alt="">
+        <area shape="poly" coords="667, 206, 919, 206, 918, 359, 685, 358" href="http://www.pantermarine.com.br/a-aces-ponteiras.htm" target="_external" alt="">
     <div id="div" style="background-image: linear-gradient(to left, white, black 30%); height: 100px; width: 100%;">
-        <a href="https://www.devmedia.com.br/bordas-arredondadas-css3-estilizando-bordas/37210" style="position: absolute; top: 50px; left: 86%; color: rgb(130, 0, 0)">Sign in</a>
-        <a href="" style="position: absolute; top: 50px; left: 90%; color: rgb(168, 0, 0);">| Sign up</a>
+        <a href="login.html" style="position: absolute; top: 50px; left: 86%; color: rgb(130, 0, 0)">Login</a>
+        <a href="" style="position: absolute; top: 50px; left: 90%; color: rgb(168, 0, 0);">| Registrar-se</a>
     </div>
     <ul class="menu">
         <li>
-        <a href="#" class="wheel">Steering wheels</a>  <!-- Dropdown -->  
+        <a href="#">Volantes</a>    
             <ul>
-                <li><a href="">Nautical Line</a></li> <!-- Dropdown list -->
-                <li><a href="">Nautical Line</a></li>
-                <li><a href="">Nautical Line</a></li>
-                <li><a href="">Nautical Line</a></li>
+                <li><a href="">Linha Nautica</a></li>
+                <li><a href="">Linha Nautica</a></li>
+                <li><a href="">Linha Nautica</a></li>
+                <li><a href="">Linha Nautica</a></li>
             </ul>
         </li>
     </ul>
