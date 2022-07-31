@@ -1,5 +1,6 @@
 <?php
-$email = $_POST['email']
-$senha = $_POST['senha']
+$email = $_POST[''];
+$senha = $_POST[''];
 echo $email;
 echo $senha;
+?>
