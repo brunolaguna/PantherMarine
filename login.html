@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
     <link rel="stylesheet" href="stylelogin.css">
+    <title>Login</title>
 </head>
 <body>
     <div class="loginFrame">
+        <img src="imagens/Icone_site2.png" alt="Logo">
         <h1>Login</h1>
-        <form action="" method="get" name="form">
-            <input type="text" placeholder="Email" id="email">
-            <input type="password" name="" id="senha" placeholder="Senha"> 
-            <input type="submit" value="submit">
+        <form action="login.php" method="post" name="form">
+            <input type="text" placeholder="Email" id="email">   
+            <input type="password" name="" id="senha" placeholder="Senha">
+            <a href="login.php"><input type="submit" value="Entrar"></a>   
         </form>
     </div>
     <script src="login.js"></script>

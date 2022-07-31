@@ -1,6 +1,5 @@
 <?php
-$email = $_GET['email']
-$senha = $_GET['senha']
+$email = $_POST['email']
+$senha = $_POST['senha']
 echo $email;
 echo $senha;
-?>
