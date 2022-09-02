@@ -1,0 +1,370 @@
+body {
+    background-image: linear-gradient(to left, rgb(179, 179, 179), rgb(0, 0, 0) 90%);
+    overflow: hidden;
+}
+
+nav {
+    margin-left: -1%;
+    display: flex;
+    height: 130px;
+    width: 101.4%;
+    align-items: center;
+    background-image: linear-gradient(to left, white, black 30%);
+    border-top: 1px solid #551919;
+    border-bottom: 1px solid #551919;
+}
+
+#logo{
+    min-height: 100px;
+}
+
+a {
+    color: rgb(116, 0, 0);
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #551919;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+a:hover {
+    font-size: 120%;
+    opacity: 0.8;
+    transition: all .2s;
+}
+
+.steeringWheels{
+    position: relative;
+    top: 10%;
+    left: 3%;
+    width: 10%;
+}
+
+.accessory{
+    position: relative;
+    top: 10%;
+    left: 7%;
+    width: 6%;
+}
+
+#sign_in{
+    position: relative;
+    top: 10%;
+    left: 59%;
+    width: 5%;
+}
+
+#sign_up{
+    position: relative;
+    top: 10%;
+    left: 60%;
+    width: 5%;
+}
+
+p{
+    position: relative;
+    top: 10%;
+    left: 58.8%;
+    font-size: 35px;
+    color: rgb(133, 23, 23);
+}
+
+.steeringWheels ul {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    height: 1%;
+    width: 100%;
+    opacity: 0;
+    background: rgb(194, 194, 194);
+    transform: rotateX(-90deg); 
+    transition: all .3s ease;
+    z-index: 1;
+}
+
+.accessory ul {
+    position: absolute;
+    left: 0%;
+    opacity: 0;
+    background: rgb(194, 194, 194);
+    transform: rotateX(-90deg); 
+    transition: all .2s ease;
+}
+    
+.steeringWheels li:hover ul {
+    height: 170px;
+    opacity: 1;
+    transform: translateY(0);
+    width: 100%;
+    border-radius: 6px 6px 6px 6px;
+}
+
+.accessory li:hover ul {
+    height: 60px;
+    opacity: 1;
+    transform: translateY(0);
+    border-radius: 6px 6px 6px 6px;
+    width: 100%;
+}
+
+.steeringWheels ul a, .accessory ul a {
+    color: rgb(116, 0, 0);
+    display: block;
+    padding: 5px 0px;
+    font-size: 15px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.slider {
+    margin: auto;
+    margin-top: 3%;
+    border-radius: 10px 10px 10px;
+    box-shadow: 0 0 3em white;
+    width: 55%;
+    height: 350px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.button{
+    position: absolute;
+    top: 350px;
+    font-size: 30px;
+    font-weight: 100;
+    z-index: 1;
+    cursor: pointer;
+    color: #940909;
+    background-color: #00000049;
+    border: 0.2px solid black;
+}
+
+.button:hover{
+    transition: all 0.7s;
+    background-color: rgba(0, 0, 0, 0.555);
+}
+
+.button:not(:hover){
+    transition: all 0.7s;
+    background-color: #00000049;
+}
+
+#button_lt{
+    width: 2%;
+    min-width: 30px;
+    border-left: none;
+}
+
+#button_gt{
+    position: absolute;
+    left: 75.39%;
+    width: 1.88%;
+    border-right: none;
+}
+
+.slide {
+    position: relative;
+    width: 25%;
+    object-fit: contain;
+    transition: 2s;
+}
+
+.slide img{
+    width: 100%;
+    height: 350px;
+}
+
+.manual-btn{
+    opacity: 0;
+    padding: 4px;
+    cursor: pointer;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 1px solid black;
+    padding: 0px;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+
+.navigation-auto{
+    position: fixed;
+    display: flex;
+    margin-top: 320px;
+    right: 24%;
+}
+
+/*.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}*/
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #aa2323;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #aa2323;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #aa2323;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #415691;
+}
+
+footer {
+    position: absolute;
+    color: rgba(190, 0, 0, 0.562);
+    font-style: italic;
+    left: 5px;
+    top: 97%;
+}
+
+
+/*@media screen and (max-width: 570px) {
+    .manual-navigation{
+        margin-left: 33%;
+    }
+    .manual-btn{
+        border: 1px solid black;
+        padding: 3px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .manual-btn:not(:last-child){
+        margin-right: 20px;
+    }
+    
+}*/
+@media screen and (min-width: 571px) and (max-width: 1057px) {
+    nav{
+        width: 101.9%;
+    }
+    a{
+        font-size: 16px;
+    }
+    #sign_in{
+        left: 42%;
+    }
+    p{
+        left: 42%;
+    }
+    #sign_up{
+        left: 44%;
+    }
+    #button_gt{
+        left: 73.8%;
+        width: 3.3%;
+    }
+    /*.manual-navigation{
+        margin-left: 32%;
+    }
+    .manual-btn{
+        border: 1px solid black;
+        padding: 4px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }*/
+}
+
+@media all and (min-width: 1057px) and (max-width: 1200px) {
+    a{
+        font-size: 16px;
+    }
+    #sign_in{
+        left: 48%;
+        width: 50px
+    }
+    p{
+        font-size: x-large;
+        left: 49%;
+    }
+    #sign_up{
+        left: 50%;
+        width: 60px;
+    }
+    #button_lt{
+        width: 2.2%;
+    }
+    #button_gt{
+        left: 74.91%;
+        width: 2.2%;
+    }
+    /*.manual-navigation{
+        margin-left: 37%;
+    }*/
+}
+
+@media all and (min-width: 1201px) and (max-width: 1550px) {
+    a{
+        font-size: 17.5px;
+    }
+    #sign_in{
+        left: 53%;
+        width: 65px;
+    }
+    p{
+        font-size: x-large;
+        left: 53.5%;
+    }
+    #sign_up{
+        left: 55%;
+        width: 65px;
+    }
+    #button_gt{
+        left: 75%;
+        width: 2.2%;
+    }
+}
+

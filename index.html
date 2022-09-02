@@ -6,86 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panther Marine</title>
     <link rel="shortcut icon" href="imagens/Imagem_Panther_Favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="stylelagu.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="slider">
-        <div class="slides">
-            <!--Slider Radio Buttons-->
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-            <!--End Radio Buttons-->
+    <header>
+        <nav>
+            <a href="#"><img src="imagens/Icone_site2.png" alt="Logo" id="logo"></a>
+                <ul class="steeringWheels">
+                    <li>
+                        <a href="steeringWheels.html" class="conteudo">Steering wheels</a>   
+                        <ul>
+                            <li><a href="http://www.pantermarine.com.br/t-vol-tratores.htm">Agricultural</a></li>
+                            <li><a href="http://www.pantermarine.com.br/a-vol-elegance-nova.htm">Elegance</a></li>
+                            <li><a href="http://www.pantermarine.com.br/a-vol-evolution.htm">Evolution</a></li>
+                            <li><a href="http://www.pantermarine.com.br/linha-nautica.htm">Nautical</a></li>
+                            <li><a href="http://www.pantermarine.com.br/a-vol-racing.htm">Racing</a></li>
+                            <li><a href="http://www.pantermarine.com.br/a-vol-sport-nova.htm">Sport</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="accessory">
+                    <li>
+                        <a href="acessories.html" class="conteudo">Accessories</a>
+                        <ul>
+                            <li><a href="http://www.pantermarine.com.br/n-ac-luz-navegacao.htm">Nautical</a></li>
+                            <li><a href="http://www.pantermarine.com.br/a-aces-antenas.htm">Automotive</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            <a href="login.html" class="sign conteudo" id="sign_in">Sign in</a>
+            <p>|</p>
+            <a href="signup.html" class="sign conteudo" id="sign_up">Sign up</a>
+        </nav>
+    </header>
+        
+        <div class="slider">
+            <div class="slides">
+                <!--Slider Radio Buttons-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!--End Radio Buttons-->
 
-            <!--Slide images-->
-            <div class="slide first">
-                <img src="imagens/Menu Panther.jpg" alt="Racing" style="height: 390px;">
+                <!--Button next slider-->
+                <button class="button" id="button_lt">&lt</button>
+                <button class="button" id="button_gt" style="text-align: right;">&gt</button>
+                <!--Button previous slider-->
+                
+                <!--Slide images-->
+                <div class="slide first">
+                    <img src="imagens/Menu Panther.jpg" alt="Racing">
+                </div>
+                <div class="slide">
+                    <img src="imagens/Evolution e Racing.png" alt="Evolution">
+                </div>
+                <div class="slide">
+                    <img src="imagens/Elegance e Sport 955.png" alt="Elegance">  
+                </div>
+                <div class="slide">
+                    <img src="imagens/Linha Náutica slide.png" alt="Linha Agrícola">
+                </div>
+                <!--End Slide images-->
+                
+                <!--Navigation auto-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"><label for="radio1" class="manual-btn" onclick="label_click()" ></label></div>
+                    <div class="auto-btn2"><label for="radio2" class="manual-btn" onclick="label_click()" ></label></div>
+                    <div class="auto-btn3"><label for="radio3" class="manual-btn" onclick="label_click()" ></label></div>
+                    <div class="auto-btn4"><label for="radio4" class="manual-btn" onclick="label_click()" ></label></div>                    
+                </div>
             </div>
-            <div class="slide">
-                <img src="imagens/Evolution e Racing.png" alt="Evolution" style="object-fit: cover; height: 390px;">
-            </div>
-            <div class="slide">
-                <img src="imagens/Elegance e Sport 955.png" alt="Elegance" style="object-fit: cover;">
-            </div>
-            <div class="slide">
-                <img src="imagens/Linha Náutica slide.png" alt="Linha Agrícola" style="object-fit: contain;">
-            </div>
-            <!--End Slide images-->
             
-            <!--Navigation auto-->
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-            </div>
-
         </div>
-
-
-        <div class="manual-navigation">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-        </div>
-
-
-    </div>
-    <!--<img src="imagens/Menu Panther.jpg" width="800" height="400" alt="Menu" usemap="#Map"> I'll add map in the image
-    <map name="Map" id="Map">
-        <area shape="rect" coords="21, 30, 260, 161" href="http://www.pantermarine.com.br/linha-nautica.htm" target="_external" alt="">
-        <area shape="circle" coords="752, 50, 158" href="http://www.pantermarine.com.br/t-vol-tratores.htm" target="_external" alt="">
-        <area shape="poly" coords="667, 206, 919, 206, 918, 359, 685, 358" href="http://www.pantermarine.com.br/a-aces-ponteiras.htm" target="_external" alt="">-->
-        <div id="div" style="background-image: linear-gradient(to left, white, black 30%); height: 120px; width: 100%; position: absolute; top: 0%;">
-            <a href="#"><img src="imagens/Icone_site2.png" alt="Logo"></a>
-            <a href="login.html" style="position: absolute; top: 60px; left: 85.6%; color: rgb(130, 0, 0)">Sign in</a>
-            <a href="signup.html" style="position: absolute; top: 60px; left: 90%; color: rgb(168, 0, 0);">| Sign up</a>
-            <ul class="menu">
-                <li>
-                <a href="#">Steering wheels</a>   
-                    <ul>
-                        <li><a href="http://www.pantermarine.com.br/t-vol-tratores.htm">Agricultural</a></li>
-                        <li><a href="http://www.pantermarine.com.br/a-vol-elegance-nova.htm">Elegance</a></li>
-                        <li><a href="http://www.pantermarine.com.br/a-vol-evolution.htm">Evolution</a></li>
-                        <li><a href="http://www.pantermarine.com.br/linha-nautica.htm">Nautical</a></li>
-                        <li><a href="http://www.pantermarine.com.br/a-vol-racing.htm">Racing</a></li>
-                        <li><a href="http://www.pantermarine.com.br/a-vol-sport-nova.htm">Sport</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="acessorio">
-                <li>
-                <a href="#" style="position: absolute; top: 60px; left: 29%; display: block;">Accessories</a>
-                    <ul>
-                        <li><a href="http://www.pantermarine.com.br/n-ac-luz-navegacao.htm">Nautical</a></li>
-                        <li><a href="http://www.pantermarine.com.br/a-aces-antenas.htm">Automotive</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="copyright"><strong>© Copyright 2022-PANTHER-All rights reserved</strong> </div>
-        <script src="script.js"></script>
+	<footer><strong>© Copyright 2022-PANTHER-All rights reserved</strong></footer>
+    <script src="script.js"></script>
 </body>
 </html>
