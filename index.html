@@ -43,38 +43,38 @@
         <div class="slider">
             <div class="slides">
                 <!--Slider Radio Buttons-->
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio1" onclick="radio1()">
+                <input type="radio" name="radio-btn" id="radio2" onclick="radio2()">
+                <input type="radio" name="radio-btn" id="radio3" onclick="radio3()">
+                <input type="radio" name="radio-btn" id="radio4" onclick="radio4()">
                 <!--End Radio Buttons-->
 
                 <!--Button next slider-->
-                <button class="button" id="button_lt">&lt</button>
-                <button class="button" id="button_gt" style="text-align: right;">&gt</button>
+                <button class="button" id="button_lt" onclick="lt()">&lt</button>
+                <button class="button" id="button_gt" onclick="gt()">&gt</button>
                 <!--Button previous slider-->
                 
                 <!--Slide images-->
-                <div class="slide first">
+                <div class="slide first" style="width: 25.67%;">
                     <img src="imagens/Menu Panther.jpg" alt="Racing">
                 </div>
-                <div class="slide">
+                <div class="slide" id="godimi">
                     <img src="imagens/Evolution e Racing.png" alt="Evolution">
                 </div>
-                <div class="slide">
+                <div class="slide" id="godimi">
                     <img src="imagens/Elegance e Sport 955.png" alt="Elegance">  
                 </div>
-                <div class="slide">
+                <div class="slide" id="godimi">
                     <img src="imagens/Linha Náutica slide.png" alt="Linha Agrícola">
                 </div>
                 <!--End Slide images-->
                 
                 <!--Navigation auto-->
                 <div class="navigation-auto">
-                    <div class="auto-btn1"><label for="radio1" class="manual-btn" onclick="label_click()" ></label></div>
-                    <div class="auto-btn2"><label for="radio2" class="manual-btn" onclick="label_click()" ></label></div>
-                    <div class="auto-btn3"><label for="radio3" class="manual-btn" onclick="label_click()" ></label></div>
-                    <div class="auto-btn4"><label for="radio4" class="manual-btn" onclick="label_click()" ></label></div>                    
+                    <div class="auto-btn1"><label for="radio1" class="manual-btn" onclick="red_radio()"></label></div>
+                    <div class="auto-btn2"><label for="radio2" class="manual-btn" onclick="red_radio()"></label></div>
+                    <div class="auto-btn3"><label for="radio3" class="manual-btn" onclick="red_radio()"></label></div>
+                    <div class="auto-btn4"><label for="radio4" class="manual-btn" onclick="blue_radio()"></label></div>                    
                 </div>
             </div>
             
