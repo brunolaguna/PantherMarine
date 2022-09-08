@@ -147,6 +147,80 @@ volante.addEventListener('click', function(){
     account.style.transition = '1.5s'
     products.style.visibility = 'hidden'
     account.style.visibility = 'hidden'
+
+    var type_wheels_mobile_left = document.querySelector('.type_wheels_mobile_left')
+    var agricutural = document.getElementById('agricultural')
+    type_wheels_mobile_left.style.opacity = '1'
+    type_wheels_mobile_left.style.visibility = 'visible'
+    agricutural.style.opacity = '1'
+    agricutural.style.visibility = 'visible'
+    type_wheels_mobile_left.style.transition = '.5s'
+    agricutural.style.transition = '1.2s'
+
+    type_wheels_mobile_right = document.querySelector('.type_wheels_mobile_right')
+    var back = document.getElementById('back')
+    document.getElementById('signup_mobile').href = "#back"
+    type_wheels_mobile_right.style.opacity = '1'
+    type_wheels_mobile_right.style.visibility = 'visible'
+    type_wheels_mobile_right.style.transition = '2s'
+    back.style.opacity = '1'
+    back.style.visibility = 'visible'
+    back.style.transition = '4s'
+
 })
+
+acessorio = document.getElementById('acessorio')
+acessorio.addEventListener('click', function(){
+    var products = document.querySelector('.products')
+    var account = document.querySelector('.account')
+    products.style.opacity = '0'
+    account.style.opacity = '0'
+    products.style.transition = '.5s'
+    account.style.transition = '1.5s'
+    products.style.visibility = 'hidden'
+    account.style.visibility = 'hidden'
+
+    type_wheels_mobile_right = document.querySelector('.type_wheels_mobile_right')
+    var automotive = document.getElementById('automotive')
+    var back = document.getElementById('back')
+    automotive.style.opacity = '1'
+    automotive.style.visibility = 'visible'
+    automotive.style.transition = '.5s'
+    type_wheels_mobile_right.style.opacity = '1'
+    type_wheels_mobile_right.style.visibility = 'visible'
+    type_wheels_mobile_right.style.transition = '2s'
+    back.style.opacity = '1'
+    back.style.visibility = 'visible'
+    back.style.transition = '4s'
+})
+
+function back(){
+    var products = document.querySelector('.products')
+    var account = document.querySelector('.account')
+    products.style.opacity = '1'
+    account.style.opacity = '1'
+    products.style.transition = '1.5s'
+    account.style.transition = '.5s'
+    products.style.visibility = 'visible'
+    account.style.visibility = 'visible'
+
+    var type_wheels_mobile_left = document.querySelector('.type_wheels_mobile_left')
+    var agricutural = document.getElementById('agricultural')
+    type_wheels_mobile_left.style.opacity = '0'
+    type_wheels_mobile_left.style.visibility = 'hidden'
+    agricutural.style.opacity = '0'
+    agricutural.style.visibility = 'hidden'
+    type_wheels_mobile_left.style.transition = '1s'
+    agricutural.style.transition = '2s'
+
+    type_wheels_mobile_right = document.querySelector('.type_wheels_mobile_right')
+    var back = document.getElementById('back')
+    type_wheels_mobile_right.style.opacity = '0'
+    type_wheels_mobile_right.style.visibility = 'hidden'
+    type_wheels_mobile_right.style.transition = '1.2s'
+    back.style.opacity = '0'
+    back.style.visibility = 'hidden'
+    back.style.transition = '.5s'
+}
 
 

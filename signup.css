@@ -1,45 +1,78 @@
 body {
     background-image: linear-gradient(to left, rgb(179, 179, 179) , rgb(0, 0, 0) 80%);
+    overflow-y: hidden;
 }
-div{
+.form{
     margin: auto;
-    margin-top: 3.5%;
-    color: black;
+    margin-top: 2%;
+    height: 90vh;
     width: 35%;
-    height: 40vw;
+    min-width: 540px;
+    text-align: center;
+    color: black;
     background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     border-radius: 10px 10px 10px 10px;
+    box-shadow: 3px 3px 3px 0.1em black;
 }
-input#nome{
-    position: absolute;
-    top: 29.6%;
-    left: 43.5%;
-    height: 2.5%;
-    width: 22%;
+img{
+    margin-top: 4%;
+    margin-bottom: 3%;
+    width: 135px;
+    background-color: black;
+    border-radius: 30px 30px 30px;
+    box-shadow: 4px 4px 0.1em black;
 }
-input#e-mail{
-    position: absolute;
-    top: 37.5%;
-    left: 43.5%;
-    height: 2.5%;
-    width: 22%;
+h1{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    font-weight: 800;
 }
-input#senha{
-    position: absolute;
-    top: 45.5%;
-    left: 43.5%;
-    height: 2.5%;
-    width: 22%;
+.fullName{
+    margin: auto;
+    padding: 5%;
 }
-input#confirma-senha{
-    position: absolute;
-    top: 53.5%;
-    left: 43.5%;
-    height: 2.5%;
-    width: 22%;
+#nome_completo{
+    font-weight: bolder;
+    margin-right: 5%;
+}
+#nome{
+    width: 65%;
+}
+.email_container{
+    margin: auto;
+    margin-left: -4%;
+}
+#e-mail{
+    font-weight: bolder;
+    margin-right: 4%;
+}
+#input_email{
+    width: 56.5%;
+}
+.password_container{
+    margin: auto;
+    padding: 5%;
+    margin-left: 0.5%;
+}
+#label_senha{
+    font-weight: bolder;
+    margin-right: 5%;
+}
+#input_senha{
+    width: 66%;
+}
+.confirm_password_container{
+    margin: auto;
+    margin-left: -8.5%;
+}
+#label_confirm_password{
+    font-weight: bolder;
+    margin-right: 4%;
+}
+#input_confirm_password{
+    width: 54.5%;
 }
 input#btn-seguinte{
     height: 5%;
@@ -47,23 +80,32 @@ input#btn-seguinte{
     top: 69%;
     left: 53%;
 }
-label#nome-completo{
+/*label#nome-completo{
     position: absolute;
     top: 30%;
     left: 37.5%;   
-}
-label#e-mail{
-    position: absolute;
-    top: 38%;
-    left: 35.5%;  
-}
-label#senha{
-    position: absolute;
-    top: 46%;
-    left: 37.8%;  
-}
-label#confirma-senha{
-    position: absolute;
-    top: 54%;
-    left: 33.2%;
+}*/
+
+@media screen and (max-width: 550px) {
+    body{
+        overflow-y: hidden;
+    }
+    .form{
+        margin-top: -6%;
+        margin-left: -3%;
+        color: black;
+        width: 105%;
+        height: 220vw;
+        background-image: linear-gradient(to left, rgb(255, 255, 255) , rgb(221, 221, 221) 98%);
+        border-radius: 0px 0px 0px 0px;
+        box-shadow: 0px 0px 0px;
+    }
+    img{
+        margin-top: 8%;
+        margin-bottom: 1%;
+        width: 135px;
+        background-color: black;
+        border-radius: 30px 30px 30px;
+        box-shadow: 4px 4px 0.1em black;
+    }
 }

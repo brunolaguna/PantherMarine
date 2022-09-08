@@ -7,6 +7,7 @@ body {
     margin-left: 30%;
     background-image: linear-gradient(to left, rgb(49, 49, 49), black 42%);
     width: 40%;
+    min-width: 320px;
     border-radius: 10px 10px 10px 10px;
     text-align: center;
     box-shadow: 0 0 0.4em black;
@@ -14,7 +15,6 @@ body {
 
 img {
     margin-top: -2%;
-    size: 5%;
 }
 
 h1 {
@@ -26,6 +26,7 @@ h1 {
 
 #email, #senha {
     width: 60%;
+    max-width: 380px;
     height: 40px;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -44,19 +45,21 @@ h1 {
 
 #labelCheckbox {
     position: absolute;
-    left: 52.5%;
+    left: 50.5%;
     font-size: medium;
 }
 
 #checkbox {
     margin-bottom: 3%;
-    margin-left: 55%;  
+    margin-left: 48%;  
 }
 
 #log-in {
-    height: 40px;
-    width: 350px;
-    margin-bottom: 2%;
+    height: 35px;
+    width: 80%;
+    max-width: 350px;
+    margin-top: 2%;
+    margin-bottom: 4%;
     margin-left: 1%;
     font-size: large;
     font-weight: bold;
@@ -86,11 +89,11 @@ hr {
 }
 
 #newAccount {
-    height: 40px;
-    width: 350px;
+    height: 35px;
+    width: 50%;
+    min-width: 200px;
     margin-top: 3%;
     margin-bottom: 5%;
-    margin-left: 1%;
     font-size: large;
     font-weight: bold;
     background-color: rgb(190, 0, 0);
@@ -102,4 +105,50 @@ hr {
 #newAccount:hover {
     box-shadow: 0 0 0.1em rgb(212, 0, 0);
     background-color: rgb(212, 0, 0);
+}
+@media screen and (max-width: 525px) {
+    body{
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .loginFrame{
+        margin-top: -10px;
+        margin-left: 0;
+        height: 800px;
+        width: 103%;
+        
+    }
+    img{
+        margin-top: 5%;
+        height: 100px;
+    }
+    h1{
+        margin-top: 5%;
+        font-size: x-large;
+    }
+    #email, #senha {
+        width: 70%;
+        height: 20px;
+        margin-top: 6%;
+        margin-bottom: 4%;
+        border: 2px solid; border-radius: 10px;
+        color: rgb(73, 73, 73);
+    }
+    #labelCheckbox {
+        position: absolute;
+        left: 40%;
+        font-size: medium;
+    }
+    #log-in{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    hr {
+        margin-top: 10%;
+        width: 85%;
+    }
+    #newAccount {
+        width: 80%;
+        margin-top: 5%;
+    }
 }

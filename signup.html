@@ -9,17 +9,20 @@
     <link rel="stylesheet" href="signup.css">
 </head>
 <body>
-    <div>
-        <h1>Sign up</h1>
-        <strong><label for="nome" id="nome-completo">Full name:</label></strong>
-        <strong><label for="nome" id="e-mail">Email address:</label></strong>
-        <strong><label for="nome" id="senha">Password:</label></strong>
-        <strong><label for="" id="confirma-senha">Confirm password:</label></strong>
-        <input type="text" name="" id="nome">
-        <input type="email" name="" id="e-mail">
-        <input type="password" name="" id="senha">
-        <input type="password" name="" id="confirma-senha">
-        <input type="button" value="Create an account" id="btn-seguinte">
-    </div>
+    <form action="" method="post">
+        <section>
+            <div id="App"></div>
+        </section>
+    </form>
+
+    <!-- React -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <!--Babel JSX-->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel" src="signup.js"></script>
 </body>
 </html>
