@@ -1,6 +1,6 @@
 body {
     background-image: linear-gradient(to left, rgb(179, 179, 179), rgb(0, 0, 0) 90%);
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 nav {
@@ -14,15 +14,26 @@ nav {
     border-bottom: 1px solid #551919;
 }
 
+.navbar_mobile{
+    position: absolute;
+    visibility: hidden;
+}
+
 #logo{
     min-height: 100px;
 }
 
+#logo_mobile{
+    position: absolute;
+    visibility: hidden;
+}
+
 a {
-    color: rgb(116, 0, 0);
-    text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
+    font-weight: 540;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: rgb(116, 0, 0);
 }
 
 a:before {
@@ -270,8 +281,7 @@ footer {
     position: absolute;
     color: rgba(190, 0, 0, 0.562);
     font-style: italic;
-    left: 5px;
-    top: 97%;
+    top: 96%;
 }
 
 
@@ -291,7 +301,90 @@ footer {
     }
     
 }*/
-@media screen and (min-width: 571px) and (max-width: 1057px) {
+
+/*Mobile Screens*/
+@media screen and (max-width: 650px) {
+    nav{
+        visibility: hidden;
+    }
+    .navbar_mobile{
+        top: -20%;
+        visibility: visible;
+    }
+    a{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    a:hover{
+        font-size: 14px;
+        text-decoration: underline;
+    }
+    .type_wheels_mobile_left{
+        display: flex;
+        flex-direction: column;
+        margin-top: -10%;
+        margin: 15%;
+        visibility: visible;
+    }
+    .type_wheels_mobile_right{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 90%;
+        visibility: visible;
+    }
+    .products{
+        display: flex;
+        flex-direction: column;
+        margin: 7%;
+        visibility: hidden;
+    }
+    .account{
+        display: flex;
+        flex-direction: column;
+        margin: 10%;
+        margin-left: 33%;
+        visibility: hidden;
+    }
+    #logo_mobile{
+        position: absolute;
+        margin-top: 84px;
+        left: 38%;
+        right: 38%; /*Leave the logo on center*/
+        height: 85px;
+        background-color: #000000d0;
+        border-radius: 35px 35px 35px;
+        visibility: visible;
+        z-index: 1;
+    }
+    .slider{
+        visibility: hidden;
+    }
+    footer{
+        position: absolute;
+        margin-top: 0%;
+    }
+}
+
+/*Tablet Screens*/
+@media screen and (min-width: 651px) and (max-width: 772px) {
+    nav{
+        width: 102%;
+    }
+    a{
+        font-size: 15px;
+    }
+    #sign_in{
+        left: 34%
+    }
+    p{
+        left: 36%;
+    }
+    #sign_up{
+        left: 38%;
+    }
+}
+@media screen and (min-width: 773px) and (max-width: 1057px) {
     nav{
         width: 101.9%;
     }
@@ -319,7 +412,8 @@ footer {
     }*/
 }
 
-@media all and (min-width: 1057px) and (max-width: 1200px) {
+/*PC Screens*/
+@media screen and (min-width: 1057px) and (max-width: 1200px) {
     a{
         font-size: 16px;
     }
@@ -340,7 +434,7 @@ footer {
     }*/
 }
 
-@media all and (min-width: 1201px) and (max-width: 1550px) {
+@media screen and (min-width: 1201px) and (max-width: 1550px) {
     a{
         font-size: 17.5px;
     }

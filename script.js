@@ -13,7 +13,7 @@ console.log(manual_btn)
 
 setInterval( function (){
     nextImage()
-}, 1000)
+}, 10000)
 
 
 button_lt = document.getElementById('button_lt')
@@ -111,3 +111,42 @@ if(nautic_line === true){
     button.style.color = 'blue'
     console.log(nautic_line)
 }
+
+// Mobile
+y=1
+function logo_mobile(){
+    y++
+    if(y%2 === 0){
+    mobile_logo = document.getElementById('logo_mobile')
+    mobile_logo.style.opacity = '0'
+    mobile_logo.style.transition = '1s'
+    mobile_logo.style.opacity = '1'
+    mobile_logo.style.marginTop = '-50px'
+    mobile_logo.style.backgroundColor = '#00000000'
+
+    navbar_mobile = document.querySelector('.navbar_mobile')
+    navbar_mobile.style.top = '0%'
+    navbar_mobile.style.transition = '1s'
+    } else{
+        navbar_mobile.style.top = '-20%'
+        navbar_mobile.style.transition = '1s'
+        mobile_logo.style.marginTop = '84px'
+        mobile_logo.style.backgroundColor = 'black'
+        mobile_logo.style.borderRadius = '30px 30px 30px'
+    }
+    console.log(y)
+}
+
+volante = document.getElementById('volante')
+volante.addEventListener('click', function(){
+    var products = document.querySelector('.products')
+    var account = document.querySelector('.account')
+    products.style.opacity = '0'
+    account.style.opacity = '0'
+    products.style.transition = '.5s'
+    account.style.transition = '1.5s'
+    products.style.visibility = 'hidden'
+    account.style.visibility = 'hidden'
+})
+
+
