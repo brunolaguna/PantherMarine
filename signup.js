@@ -29,7 +29,11 @@ function App(){
                 <input type="password" name="" id="input_confirm_password"></input>
             </div>
 
-            <input type="button" value="Create an account" id="btn-seguinte"></input>
+            <hr></hr>
+            
+            <input type="submit" value="Create an account" className="button_createAccount"></input> <br></br>
+            <a href="index.html"><input type="button" value="< Back" className="button_back"></input></a>
+
         </div>
     )
 }

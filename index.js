@@ -221,6 +221,61 @@ function back(){
     back.style.opacity = '0'
     back.style.visibility = 'hidden'
     back.style.transition = '.5s'
+
+    let slider = document.querySelector('.slider')
+    slider.style.visibility = 'hidden'
+    slider.style.opacity = '0'
+    slider.style.transition = '2s'
 }
 
+function steeringWheel(){
+    let slider = document.querySelector('.slider')
+    slider.style.visibility = 'visible'
+    slider.style.opacity = '1'
+    slider.style.transition = '3s'
 
+    document.getElementById('automotive1').src = "imagens/Automotive 1.jpeg"
+    document.getElementById('automotive1').style.objectFit = 'contain' 
+    document.getElementById('automotive2').src = "imagens/Evolution2.png"
+    document.getElementById('automotive2').style.objectFit = 'contain' 
+    document.getElementById('agricultural_1').src = "imagens/Agricultural_Steering_Wheel(1).png"
+    document.getElementById('agricultural_1').style.objectFit = 'contain' 
+    document.getElementById('nautical_line').src = "imagens/NauticalLine_mobile.jpeg"
+    document.getElementById('nautical_line').style.objectFit = 'contain' 
+}
+
+//if(z == 3 || count == 3){
+//    var sup1 = new SuperGif({gif: document.getElementById('agricultural_1')})
+//    sup1.load();
+//
+//    sup1.play()
+//} else{
+//    sup1.move_to(0)
+//}
+
+//if(z != 3 || count != 3){
+//    var video = document.getElementById('agricultural_1')
+//    function stopVideo(){
+//        video.pause()
+//        video.currentTime = 0
+//    }
+//} else{
+//    stopVideo
+//    video.currentTime = 0
+//}
+
+function acessorie(){
+    let slider = document.querySelector('.slider')
+    slider.style.visibility = 'visible'
+    slider.style.opacity = '1'
+    slider.style.transition = '3s'
+
+    document.getElementById('automotive1').src = "imagens/Manoplas.png"
+    document.getElementById('automotive1').style.objectFit = 'contain' 
+    document.getElementById('automotive2').src = "imagens/Ponteiras.png"
+    document.getElementById('automotive2').style.objectFit = 'contain'
+    document.getElementById('agricultural_1').src = "imagens/Acessorio Nautico.png"
+    document.getElementById('agricultural_1').style.objectFit = 'contain'
+    document.getElementById('nautical_line').src = "imagens/Acessorio Nautico 2.png"
+    document.getElementById('nautical_line').style.objectFit = 'contain'   
+}

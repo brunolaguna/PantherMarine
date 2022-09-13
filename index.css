@@ -358,7 +358,7 @@ footer {
     #logo_mobile{
         position: absolute;
         margin-top: 84px;
-        left: 38%;
+        left: 35%;
         right: 38%; /*Leave the logo on center*/
         height: 85px;
         background-color: #000000d0;
@@ -367,6 +367,51 @@ footer {
         z-index: 1;
     }
     .slider{
+        margin-left: -2.5%;
+        height: 370px;
+        width: 104.8%;
+        min-width: 0px;
+        border-radius: unset;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .slide{
+        left: -14.3%;
+    }
+    #button_lt{
+        position: absolute;
+        top: 67.6%;
+        height: 70px;
+        width: 30%;
+        border: unset;
+    }
+    #button_gt{
+        position: absolute;
+        top: 67.6%;
+        left: 70%;
+        height: 70px;
+        width: 30%;
+        border: unset;
+    }
+    .slides{
+        width: 450%;
+    }
+    #radio1:checked ~ .first{
+        margin-left: 15%;
+    }
+    
+    #radio2:checked ~ .first{
+        margin-left: -12.5%;
+    }
+    
+    #radio3:checked ~ .first{
+        margin-left: -37.5%;
+    }
+    
+    #radio4:checked ~ .first{
+        margin-left: -63%;
+    }
+    .navigation-auto{
         visibility: hidden;
     }
     footer{
