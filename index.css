@@ -33,7 +33,7 @@ a {
     font-weight: 540;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
-    color: rgb(116, 0, 0);
+    color: #740000;
 }
 
 a:before {
@@ -316,6 +316,7 @@ footer {
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 600;
         font-size: 14px;
+        cursor: pointer;
     }
     a:hover{
         font-size: 14px;

@@ -159,7 +159,6 @@ volante.addEventListener('click', function(){
 
     type_wheels_mobile_right = document.querySelector('.type_wheels_mobile_right')
     var back = document.getElementById('back')
-    document.getElementById('signup_mobile').href = "#back"
     type_wheels_mobile_right.style.opacity = '1'
     type_wheels_mobile_right.style.visibility = 'visible'
     type_wheels_mobile_right.style.transition = '2s'
@@ -206,12 +205,18 @@ function back(){
 
     var type_wheels_mobile_left = document.querySelector('.type_wheels_mobile_left')
     var agricutural = document.getElementById('agricultural')
+    document.getElementById('automotive').href = "#"
     type_wheels_mobile_left.style.opacity = '0'
     type_wheels_mobile_left.style.visibility = 'hidden'
     agricutural.style.opacity = '0'
     agricutural.style.visibility = 'hidden'
     type_wheels_mobile_left.style.transition = '1s'
     agricutural.style.transition = '2s'
+
+    let slider = document.querySelector('.slider')
+    slider.style.visibility = 'hidden'
+    slider.style.opacity = '0'
+    slider.style.transition = '2s'
 
     type_wheels_mobile_right = document.querySelector('.type_wheels_mobile_right')
     var back = document.getElementById('back')
@@ -222,10 +227,7 @@ function back(){
     back.style.visibility = 'hidden'
     back.style.transition = '.5s'
 
-    let slider = document.querySelector('.slider')
-    slider.style.visibility = 'hidden'
-    slider.style.opacity = '0'
-    slider.style.transition = '2s'
+    document.getElementById('signup_mobile').href = "signup.html"
 }
 
 function steeringWheel(){
@@ -234,6 +236,8 @@ function steeringWheel(){
     slider.style.opacity = '1'
     slider.style.transition = '3s'
 
+    document.getElementById('automotive').href = "steeringWheels.html"
+    
     document.getElementById('automotive1').src = "imagens/Automotive 1.jpeg"
     document.getElementById('automotive1').style.objectFit = 'contain' 
     document.getElementById('automotive2').src = "imagens/Evolution2.png"
@@ -265,6 +269,7 @@ function steeringWheel(){
 //}
 
 function acessorie(){
+    document.getElementById('signup_mobile').href = "#"
     let slider = document.querySelector('.slider')
     slider.style.visibility = 'visible'
     slider.style.opacity = '1'
